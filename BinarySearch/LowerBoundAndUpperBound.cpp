@@ -90,7 +90,7 @@ int main(){
     vector<int> nums = {3,7,8,8,8,8,8,9,10};
     cout << applicationsOfLBUB(nums, target) << endl;
     cout << "Floor" << endl;
-    nums = {5,7,8,9,10};
-    cout << floorImplementation(nums, target) << endl;
+    nums = {1,2,3,3,3,4,5};
+    cout << floorImplementation(nums, 3) << endl;
     
 }
