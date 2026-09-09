@@ -24,10 +24,8 @@ int minEatingSpeed(std::vector<int>& piles, int duration){
         int mid = low+(high-low)/2;
 
         if(canEat(mid, piles, duration)){
-            if(mid <= minimumTime){
                 minimumTime = mid;
                 high = mid-1;
-            }
         }
         else {
             low = mid+1;
