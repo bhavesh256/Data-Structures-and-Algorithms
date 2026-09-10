@@ -17,6 +17,7 @@ int lowerBoundImplementation(vector<int> &arr, int target){
             low = mid+1;
         }
     }
+    
     return lowerBoundIdx;
 }
 
@@ -36,6 +37,7 @@ int floorImplementation(vector<int> &arr, int target){
             high = mid-1;
         }
     }
+
     return floorIdx;
 }
 
@@ -60,6 +62,7 @@ int upperBoundImplementation(vector<int> &arr, int target){
             low = mid+1;
         }
     }
+
     return upperBoundIdx;
 }
 int upperBoundBuiltInFunction(vector<int> &arr, int target){
@@ -83,14 +86,17 @@ int main(){
     cout << "Lower Bound" << endl;
     cout << lowerBoundImplementation(arr, target) << endl;
     cout << lowerBoundBuiltInFunction(arr, target) << endl;
+
     cout << "Upper Bound" << endl;
     cout << upperBoundBuiltInFunction(arr, target) << endl;
     cout << upperBoundImplementation(arr, target) << endl;
+
     cout << "Counting Occurrences" << endl;
     vector<int> nums = {3,7,8,8,8,8,8,9,10};
     cout << applicationsOfLBUB(nums, target) << endl;
+
     cout << "Floor" << endl;
     nums = {1,2,3,3,3,4,5};
     cout << floorImplementation(nums, 3) << endl;
-    
+   
 }

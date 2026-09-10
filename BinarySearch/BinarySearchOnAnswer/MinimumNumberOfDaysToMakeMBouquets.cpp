@@ -9,7 +9,7 @@ bool isPossible(vector<int>& bloomDay,int day, int m, int k){
             if(count == k){
                 numOfBouquets++;
                 count=0;
-                if (numOfBouquets ==m) return true;
+                if (numOfBouquets == m) return true;
             }
         }
         else {
